@@ -1,0 +1,22 @@
+ .panel-body a {
+      word-break: break-all;
+    }
+
+.jumbotron {
+	background-color: 008080;
+}
+
+h1 {
+	text-align: center; 
+} 
+
+p {
+	text-align: center;
+} 
+.col-md-1 {
+	font-weight: bold;
+} 
+
+.trentonExpress{
+	font-size: 14px;
+}

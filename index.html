@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Train Scheduler</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css"> 
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+</head>
+<body> 
+
+	<div class="container">
+
+	
+		<div class="jumbotron" style="background-color: #008080; color: #FFF;">
+ 			 <h1>Anytime is Train Time!</h1>
+  				<p>Cho Cho. Chee Chee.</p>
+		</div>
+
+		<div class="panel panel-default">
+  
+  		<div class="panel-heading" style="background-color: #008080; color: #FFF;">Current Train Schedule</div>
+
+  			<table class="table table-hover" id="trainTable"> 
+  				<thead>
+  					<tr>
+  					<th class="col-md-1">Train Name</th>
+  					<th class="col-md-1">Destination</th>
+  					<th class="col-md-1">Frequency(min)</th>
+  					<th class="col-md-1">Next Arrival</th>
+  					<th class="col-md-1">Minutes Away</th>
+					</tr>
+				</thead>
+					<tbody> 
+					
+					</tbody>
+  			</table> 
+  		</div> 
+
+  		<div class="panel panel-default"> 
+
+  		<div class="panel-heading" style="background-color: #008080; color: #FFF;">Add Train</div>
+
+  		<form role="form">
+  
+              <div class="form-group">
+                <label for="train">Train Name</label>
+                <input type="text" class="form-control" id="trainName">
+              </div>
+
+             
+              <div class="form-group">
+                <label for="destination">Destination</label>
+              	<input type="text" class="form-control" id="destination">
+              </div>
+
+          
+              <div class="form-group">
+                <label for="start-year">First Train Time(HH:mm - Military Time)</label>
+                <input type="text" class="form-control" id="firstTime">
+              </div>
+
+             
+              <div class="form-group">
+                <label for="frequency">Frequency (min)</label>
+                <input type="text" class="form-control" id="frequency">
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="submit" style=" background-color: #008080; color: #FFF;">Submit</button> 
+            </form>
+         </div>
+
+	
+	</div>  
+
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
